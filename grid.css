@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+  display: grid;
+  padding: 0;
+  grid-gap: 2rem;
+  grid-template: "nav" "header " "main" "headcont" "content" "jump" "footer" auto / auto;
+  margin: auto;
+  height: 100vh;
+  word-break: break-word;
+}
+.formatting {
+  padding: 0em 1rem 0em 1rem;
+}
+#gallery {
+  grid-area: main;
+}
+#gallgrid {
+  display: grid;
+  padding: 0;
+  grid-gap: 2rem;
+  grid-template: "im1" "im2" "im3" "im4" "im5" "im6" "wide" auto / auto;
+  margin: auto;
+  justify-items: center;
+}
+#gallgrid img{
+  width: 75vw;
+  border-radius: 0.5rem;
+}
+#vidgrid {
+  display: grid;
+  padding: 0;
+  grid-gap: 2rem;
+  grid-template: "vid1" auto / auto;
+  margin: auto;
+  justify-items: center;
+}
+#vidgrid video {
+  width: 75vw;
+}
+
+@media (min-width: 40em) {
+  body {
+    display: grid;
+    grid-template:
+      "nav nav nav" auto
+      "header header headcont" 1fr
+      "main main content" auto
+      "jump jump ." 1fr
+      "footer footer footer" auto
+      / 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    height: 100vh;
+  }
+  .formatting {
+    margin: 0em 1em 0em 1em;
+    padding: 1em;
+  }
+  #gallery {
+    grid-area: 3 / 1 / 3 / 4;
+  }
+  #gallgrid {
+    display: grid;
+    padding: 1rem;
+    grid-template:
+    "im1 im2 im3" 1fr
+    "im4 im5 im6" 1fr
+    / 1fr 1fr 1fr;
+    margin: auto;
+    width: 100%;
+    justify-items: center;
+  }
+  #gallgrid img{
+    width: 25vw;
+  }
+  #vidgrid {
+    grid-area: 3 / 1 / 3 / 4;
+  }
+  #vidgrid {
+    display: grid;
+    padding: 1rem;
+    grid-gap: 2rem;
+    grid-template:
+    "vid1" auto
+    / auto;
+    margin: auto;
+    justify-items: center;
+    width: 100%;
+  }
+  #vidgrid video {
+    width: 70vw;
+  }
+}
+
+nav {
+  grid-area: nav;
+  background: #2C2F33;
+  display: inline-block;
+  padding: 1rem;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+#headcont{
+  grid-area: headcont;
+}
+#content {
+  grid-area: content;
+}
+body>footer {
+  grid-area: footer;
+  background: rgba(0,0,0,.1);
+}
+#jump {
+  grid-area: jump;
+}
+#im1 {
+  grid-area: im1;
+}
+#im2 {
+  grid-area: im2;
+}
+#im3 {
+  grid-area: im3;
+}
+#im4 {
+  grid-area: im4;
+}
+#im5 {
+  grid-area: im5;
+}
+#im6 {
+  grid-area: im6;
+}
+#vid1 {
+  grid-area: vid1;
+}

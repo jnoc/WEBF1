@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <title>UP896692:~$ discovery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="grid.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav>
+      <a class="wow" href="index.html" role="button" aria-label="home button"><i class="fas fa-home"></i></a>
+      <a class="wow" href="video.html" role="button" aria-label="video button"><i class="fas fa-video"></i> Video</a>
+      <a class="wow" href="gallery.html" role="button" aria-label="gallery button"><i class="fas fa-images"></i> Gallery</a>
+      <a class="wow" href="discovery.html" role="button" aria-label="discovery button"><i class="fas fa-search"></i> Discovery</a>
+      <a class="wow" href="literature.html" role="button" aria-label="literature button"><i class="fas fa-pen-alt"></i> Literature Review</a>
+  </nav>
+  <header class="formatting scoreB">
+    <h2>Discovery Log</h2>
+  </header>
+  <main class="formatting">
+    <h4 tabindex="1">Week 01 - Introduction</h4>
+    <p>This week we looked at the start up of our vms and how they can be used to host a simple http web page. Along with this I was introduced to the linux command line which luckily I have seen before. This first involved making a web folder via
+      <code>mkdir web</code>, connecting to this folder via <code>cd web</code>. From here I created a html file through the <code>nano</code> command and hosting it to be accessed by the vm IP address / personal domain of <code>up896692.myvm.port.ac.uk</code>.
+      You can also use the <code>ls</code> command to list all the files in that directory and to return back to your student id folder you simply type <code>cd</code> and <em>*enter*</em>.</p>
+    <h4 tabindex="2">Week 02 - Web security</h4>
+    <p>This week we looked into different types of information that us as users generate on a day to day basis. This then had to be subdivided into different severities of data and how they would be considered to be secret, private or public.
+      Further
+      on from this we discussed how this would be captured from people and how this either would be on a legal or illegal basis. A brief list of attacks could range from:</p>
+    <ul>
+      <li>Phishing
+      <li>SQL Injection Attack (SQLi)
+      <li>Cross-Site Scripting (XSS)
+      <li>Man-in-the-Middle (MITM)
+      <li>Malware Attack
+      <li>Denial-of-Service Attack
+      <li>Spear Phishing Attack
+      <li>Whaling Phishing Attack
+      <li>Brute-Force and Dictionary Attacks
+    </ul>
+    <p>Further reading can be found here at <a href="https://www.rapid7.com/fundamentals/types-of-attacks" title="Types of web attacks" target="_blank">rapid7</a>.</p>
+    <h4 tabindex="3">Week 03 - Literature Review Preparation</h4>
+    <p>Literature review research was the main focus of this week. This weeks google document provided a way in which we can gather articles and papers relating to the literature review title. This is then going to be broken down into useful papers
+      and papers that are unrelated to the topic. Further creating notes and referencing to them. Themes will be created from these and a ‘synthesized precis’ will be the overall outcome of this literature review, therefore giving a ‘state of the
+      art’ review of <a href=literature.html title="My literature review">Mitigating personal information exposure on the web</a>.</p>
+    <h4 tabindex="4">Week 04 - Academic Writing</h4>
+    <p>During this practical session I have looked into academic writing that has helped with improving word structure within sentences. This is important as it can help me to cut down on word count as well as having correct sentences within my
+      literature review. For instance through replacing phrasal verbs with cues it reduces your word count so it gives a clearer point that you are trying to get across in a reduced about of words. A big part of this was that a literature review
+      should avoid personal opinion, as well as this referencing was to be done in the <a href="http://referencing.port.ac.uk/" target="_blank" title="APA v6 referencing">APA format (sixth edition)</a>.</p>
+    <h4 tabindex="5">Week 05 - Introduction to Markup</h4>
+    <p>During this practical the task was to start off by setting up the virtual machine to be opened in <a href="https://winscp.net/eng/index.php" target="_blank" title="WinSCP Free File manager">WinSCP</a> which I knew about from previous experience with
+      websites. From here I created a simple profile page via the in text editor that could display a single
+      paragraph as so.
+      <pre class="codeblock">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Profile&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Hello this is my profile page!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p>I then linked this to a home page that allows the profile page to be navigated to, this was the origins of the index page where you can access all my other pages within the folder. The google doc pointed to further reading on the <a href="http://developer.mozilla.org/" target="_blank"
+          title="Mozilla Developer Network (MDN)">Mozilla Developer Network</a> where an extensive website of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" title="HTML5 Directory">HTML5</a> resources are available for you to
+        get access to. In this instance <code>&lt;!DOCTYPE html&gt;</code> shows that the document type is in HTML5.</p>
+      <h4>Week 06 - Consolidation Week</h4>
+      <p>Website was worked on.</p>
+      <h4 tabindex="6">Week 07 - HTML/CSS</h4>
+      <p>Having a CSS file in place of style attributes helps in multiple ways, firstly the maintenance of the page is reduced significantly due to the style being placed within a style sheet and so allows you to edit multiple elements with the same
+        styles all at once. File sizes are reduced meaning faster loading times on user interaction. This week was the basics of linking a stylesheet to a HTML document. As shown:</p>
+      <pre class="codeblock">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Hello CSS World&lt;/title&gt;
+    &lt;link rel="stylesheet" title="My Style" href="mystyle.css"&gt;
+&lt;/head&gt;
+&lt;article&gt;
+  &lt;section&gt;
+    &lt;h1 class=special&gt;First Steps &lt;/h1&gt;
+    &lt;p class=first&gt;First paragraph&lt;/p&gt;
+    &lt;p class=special&gt;Second paragraph. &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+</pre>
+
+      <p>Within this code snippet the first <code>h1</code> and second <code>p</code> both have the same CSS styling which for instance could be the same colour or different font-family's. This shows how using the <code>&lt;style&gt;</code> tag within the head or anywhere else on the HTML document was only to slow down the process of the page loading. Therefore with this you could cut code down from:</p>
+      <pre class="codeblock">
+&lt;style&gt;
+  section {
+    color: red;
+  }
+  p {
+    font-family: sans-serif;
+    font-size: 130%;
+  }
+&lt;/style&gt;
+</pre>
+      <p>To this: <code>&lt;link rel="stylesheet" title="My Style" href="mystyle.css"&gt;</code> where your styles can be put in its own <code>mystyle.css</code> file.</p>
+      <p>Further reading on CSS can be found here <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS" target="_blank" title="Mozilla Developer CSS page">MDN CSS</a>.</p>
+      <h4 tabindex="7">Week 08 - Editors and Productivity</h4>
+      <p>Editors are important in the efficiency in your coding of your web page, with different packages within editors it makes it very easy to quickly markup a document. By cutting out default methods, adding multiple cursors, themes, a live preview and beautifying it makes it much more sense to use. Further on in this practical I marked up this discovery log to be easily uploaded to the website when I switch over to my own CSS rather than the use of bootstrap. A range of editors that have received good reviews are:</p>
+<ul>
+  <li><a href="https://atom.io/" target="_blank" title="Atom link">Atom</a> (I use this)
+  <li><a href="https://code.visualstudio.com/" target="_blank" title="Visual Studio Code link">Visual Studio Code</a>
+  <li><a href="http://brackets.io/" target="_blank" title="Brackets link">Brackets</a>
+  <li><a href="https://www.sublimetext.com/" target="_blank" title="Sublime link">Sublime</a>
+  <li><a href="https://notepad-plus-plus.org/" target="_blank" title="Notepad++ link">Notepad++</a>
+</ul>
+
+<p>When connecting to the virtual machine you use a SSH login via the plugin provided in week 01, this is useful for navigating around the linux command line yet when you want to add your own HTML files from your local machine this isn’t so useful. Therefore to do this you use <a href="https://winscp.net/eng/index.php" target="_blank" title="WinSCP Free File manager">WinSCP</a> which is a form of SFTP. This allows you to transfer files from your local pc to the virtual machine. From the command line you can then run <code>http-server</code> within the directory of your files to see them go live on the vm’s IP.<p>
+<p>Atom packages can be found here: <a href="https://atom.io/packages" target="_blank" title="Atom packages link">Atom packages</a>.</p>
+<h4 tabindex="8">Week 09 - Information Design</h4>
+<p>During this session I learnt that having lots of information is hard to scale down into groups. This inevitably helps users to navigate around your web page and so having well grouped categories can make this easier and less stressful for your users. By not committing to this you run the risk of other competitors from taking your traffic due to their site having a better way of presenting the information to your users. Within this practical our group was instructed to sort 42 cards into categories that we thought best suited them. This was our result:</p>
+<picture title="42 Cards sorted into categories">
+  <source srcset="img/discovery_week9.jpg">
+  <img src="img/old.png" alt="Fallback image, this means that your broswer is very old!" id="im3"/>
+</picture>
+<p>From here it helps me to develop upon a website that is clear to the user and down to the point at the beginning so there is no confusion.</p>
+<h4 tabindex="9">Week 10 - Using Images</h4>
+<p>Images require the use of a <code>&lt;img&gt;</code> tag to be displayed within a web page. This has data within it that specify the source with the <code>src</code> and describe what the image is with the <code>alt</code> attributes. An example of this would be:</p>
+<pre class="codeblock">&lt;img src="img/example.png" alt="An example img tag"&gt;</pre>
+<p>Another way in displaying an image on a web page is to use the <code>&lt;picture&gt;</code> element which allows you to put multiple sources to support many different types of browsers or to support slower devices. You can still use the <code>alt</code> attribute to describe the image yet when you map out the image into html you use a <code>&lt;source&gt;</code> element instead of <code>src</code>.  Within using this <code>&lt;source&gt;</code> element you can determine what image quality to display depending on the quality of the screen that is loading the image. An example of this is:</p>
+<pre class="codeblock">
+&lt;picture&gt;
+  &lt;source srcset="img/source1.png" alt="source image 1"&gt;
+  &lt;source srcset="img/source2.jpg" alt="source image 2"&gt;
+  &lt;img src="img/fallback.png" alt="fall back image if picture source tag images don’t show"&gt;
+&lt;/picture&gt;
+</pre>
+<p>On my web page I have mostly used the picture tag as that is the most up to date HTML5 element for displaying images.</p>
+<h4>Week 11 - 12 Christmas Break</h4>
+<p>Website was worked on</p>
+<h4 tabindex="10">Week 13 - Addressing the Web</h4>
+<p>Anchor tags are important when you want to link a external site to your page. This is when you see a link on your page, click it and it pops open the destination url. The simple use of <code>&lt;a&gt;</code> is what does this. By using the <code>href</code> attribute the anchor tag is complete and ready to use. Other types of attributes you can use within the anchor element are <code>alt</code> for a link description, <code>title</code> for a tool tip prompt when hovering over the link and a <code>target</code> which allows for the link to be opened in a fresh tab or browser rather than detering the user from your web page.</p>
+<h4 tabindex="11">Week 14 - Website Marking Scheme</h4>
+<p>During this week it was key for everyone to know what the web page specifications were and what each page was expected to meet for either high or low end grading. This meant that through the use of <a href="https://validator.w3.org" title="W3C validator link">W3C validator</a> the page should not throw any errors when tested, this site allows for the developer to see exactly where the error is thrown down to the line that it is on and what file it is in. Along with this it is important that the web pages are in HTML5 as that is the most up to date recommendation suggested by <a href="https://w3.org/TR/html5" title="W3C HTML5 document">W3C</a>, this is to make sure that old traits are not being carried forward into future times.</p>
+<h4 tabindex="12">Week 15 - Web Standards</h4>
+<p>The original web was a very confusing place with random web pages scattered around to their own IPs or domains, there was no common search engine and HTML was basic. As the internet developed so did website standards, for instance you have multiple browsers that some could display a certain web page whereas others couldn’t. With standards it makes users time a lot easier since a web page is made to work in all browsers and handle multiple requests that before it couldn’t. HTML5 has improved standards by giving content within a web page more meaning when being read in the source, examples of this are <code>body</code>, <code>article</code>, <code>section</code>, <code>nav</code>, <code>aside</code>, <code>header</code> and <code>footer</code>.</p>
+<h4 tabindex="13">Week 16 - Usability</h4>
+<p>If a user is left frustrated with a web page then it is likely that they will not return to that page unless they have to. With usability it is the idea of making web pages user friendly and accustom to make their use of the site as easy as possible with either clearly laid out content or visual comfort. A good example of this is if a website is usable on desktop and mobile, as the web has grown mobiles have too. It is now the norm for a user to be viewing a site from their mobile browser rather than their desktop. Therefore with the use of the <code>@media</code> CSS selector developers can incorporate sites to be scaled accordingly to the screen size. An example of this would be:</p>
+<pre class="codeblock">
+/* CSS FILE
+This determines what layout of grid is set, the first body is used on the
+mobile view as the media tag only initiates when the browser is 40em wide.
+(This is my site CSS)
+*/
+body {
+  display: grid;
+  padding: 0;
+  grid-gap: 2rem;
+  grid-template: "nav" "header " "main" "headcont" "content" "jump" "footer" auto / auto;
+  margin: auto;
+  height: 100vh;
+  word-break: break-word;
+}
+
+@media (min-width: 40em) {
+  body {
+    display: grid;
+    grid-template:
+      "nav nav nav" auto
+      "header header headcont" 1fr
+      "main main content" auto
+      "jump jump ." 1fr
+      "footer footer footer" auto
+      / 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    height: 100vh;
+  }
+</pre>
+<p>By removing factors that may impair the sites performance you are automatically improving the page and the amount of traffic that will use it. It is not how the developer wants the site to perform and run but ultimately to be designed and tailored for the users ease.</p>
+<h4 tabindex="14">Week 17 - Accessibility</h4>
+<p>This week consisted of using visually impairing items and a way in which to physically impair my use of websites. Tunnel vision was used to show how some users can only see pinpoints of a site due to their restricting vision, retinal impairment was to simulate the distance a user had to be from the screen in order to see the text at different angles. There are 4 criterias that should be thought about when taking accessibility into consideration.</p>
+<p>These are:</p>
+<ul>
+  <li>Perceivable - Through the use of text alternatives people who are impaired in sight or speech are not incapable of using the site due to their impairment.</li>
+  <li>Operable - By making your website keyboard friendly, navigation friendly and removing designs that is known to cause seizures, users will have a much better experience.</li>
+  <li>Understandable - Making content readable, appearance and operational predictable will improve a users experience. This helps users to avoid mistakes.</li>
+  <li>Robust - Having your site compatible with current and future technologies allows for expansion and introduction of assistive technology.</li>
+</ul>
+
+
+
+  </main>
+  <section id="jump" class="formatting">
+    <a class="wow" href="#top" role="button" aria-label="jump to the top of the page"><i class="fas fa-chevron-circle-up"></i></a>
+  </section>
+  <section id="headcont" class="formatting scoreB">
+    <h4>Author: <em>UP896692</em></h4>
+  </section>
+  <section id="content" class="formatting">
+    <h4>Glossary</h4>
+    <p><strong>HTML:</strong> Hypertext Markup Language (<em>HTML</em>) is the standard markup language for creating web pages and web applications.</p>
+    <p><strong>CSS:</strong> Cascading Style Sheets (<em>CSS</em>) is a style sheet language used for describing the presentation of a document written in a markup language like HTML</p>
+    <p><strong>IP:</strong>  Internet Protocol (<em>IP</em>) address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.</p>
+    <p><strong>SFTP:</strong> Secure File Transfer (<em>SFTP</em>) is a robust file transfer protocol based on SSH that provides file transfers between hosts on a network. Like a remote file management protocol, SFTP allows for a range of operations on remote files (viewing directories, deleting files and directories, etc.).</p>
+    <p><strong>SSH:</strong> Secure Shell (<em>SSH</em>) is a cryptographic network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line login and remote command execution, but any network service can be secured with SSH.</p>
+    <p><strong>URL:</strong> Uniform Resource Locator (<em>URL</em>) is used to specify addresses on the World Wide Web and is the fundamental network identification for any resource connected to the web (e.g., hypertext pages, images, and sound files). The protocol specifies how information from the link is transferred.</p>
+    <p><strong>More internet glossary terms at:</strong> <a href="https://techterms.com/category/internet" title="Link to a wider range of internet glossary terms">techterms.com</a></p>
+  </section>
+  <footer class="footinfo">
+    <h4><i class="fas fa-code"></i> <strong>from UP896692</strong></h4>
+    <a href="https://validator.w3.org/check?uri=referer" target="_blank" title="w3c validator">W3C page validator</a>
+  </footer>
+</body>
+
+</html>
